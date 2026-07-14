@@ -6,7 +6,7 @@ import { TooltipProvider } from '@/shared/components/ui/tooltip';
 
 export const Providers = ({ children }: { children: ReactNode }) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AuthProvider>
         <TooltipProvider>
           {children}

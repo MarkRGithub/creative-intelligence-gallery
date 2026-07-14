@@ -25,7 +25,7 @@ export const UploadForm = ({ onSubmit, isLoading, onCancel }: UploadFormProps) =
   const [deliveryType, setDeliveryType] = useState<DeliveryType>(DELIVERY_TYPES[0]);
   const [featuresString, setFeaturesString] = useState('');
   const [errors, setErrors] = useState<UploadFormErrors>({});
-  const [uploadProgress, setUploadProgress] = useState(0); // TODO: Use for upload progress
+  const uploadProgress = 0; // TODO: Replace when real upload progress is available
 
   const {
     analysisError,
